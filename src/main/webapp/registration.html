@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <script>
+        function validateForm(){
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h1 class="app-title">Track & Save</h1> <!-- Top left title -->
+
+    <div class="registration-container">
+        <form action="RegistrationServlet" method="post" onsubmit="return validateForm()">
+            <h2>User Registration</h2>
+            
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+<button type="submit" style="background: #273746 ; color: white; border: none; padding: 10px; width: 100%; border-radius: 4px; cursor: pointer; font-size: 16px;">
+    Register
+</button>
+<div style="margin-top: 10px; text-align: center;">
+    <a href="index.html" style="display: block;">Already a user? Login here</a>
+</div>
+
+        </form>
+    </div>
+
+</body>
+</html>

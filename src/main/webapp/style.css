@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* Apply styles to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Center wrapper for login container */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Track & Save Title */
+.app-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Login Container */
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #273746;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1c2933;
+}
+
+/* Registration Link */
+.register-link {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
